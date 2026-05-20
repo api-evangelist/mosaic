@@ -18,6 +18,9 @@ modified: '2026-04-28'
 url: >-
   https://raw.githubusercontent.com/api-evangelist/mosaic/refs/heads/main/apis.yml
 specificationVersion: '0.19'
+common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/mosaictech
 apis: []
 commonProperties:
   - type: Website
