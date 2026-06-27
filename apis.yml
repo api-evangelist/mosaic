@@ -22,7 +22,7 @@ specificationVersion: '0.19'
 common:
   - type: LinkedIn
     url: https://www.linkedin.com/company/mosaictech
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://www.mosaic.com/llms.txt
 apis: []
 commonProperties:
