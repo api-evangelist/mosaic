@@ -1,10 +1,15 @@
 aid: mosaic
 name: Mosaic
 description: >-
-  Mosaic is a brand experience agency offering experiential marketing, B2B corporate
-  experiences, integrated commerce, and field sales and marketing services. The agency
-  builds brand-building, conversion-driving experiences for clients across multiple
-  channels.
+  Mosaic is a North American brand experience agency with global reach, and one of the
+  pillar agencies of Acosta Group. It works across four service lines — experiential
+  marketing, B2B corporate experiences and events, integrated commerce and shopper
+  programs, and field sales and marketing — plus third-party labor, assisted selling,
+  retail merchandising, sales training, retail execution and surge staffing for retail,
+  B2B and CPG environments. With roots in Toronto and Dallas and offices in Jacksonville,
+  Mosaic says it has spent more than 35 years building brand experiences designed to drive
+  awareness, engagement, conversion and behaviour change. Mosaic publishes no developer
+  program, API documentation or machine-readable API contract.
 type: Index
 accessModel:
   pricing: unknown
@@ -25,16 +30,61 @@ tags:
   - Brand Experience
   - Agency
   - Fortune 500
+  - Experiential Marketing
+  - Field Marketing
+  - Retail Merchandising
+  - Integrated Commerce
+  - Events
 created: '2026-03-21'
-modified: '2026-04-28'
+modified: '2026-08-13'
 url: >-
   https://raw.githubusercontent.com/api-evangelist/mosaic/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 common:
+  - type: DomainSecurity
+    url: security/mosaic-domain-security.yml
+  - type: Website
+    url: https://www.mosaic.com
   - type: LinkedIn
     url: https://www.linkedin.com/company/mosaictech
   - type: LlmsText
     url: https://www.mosaic.com/llms.txt
+  - type: LLMsTxt
+    name: llms.txt (harvested verbatim)
+    url: llms/mosaic-llms.txt
+  - type: About
+    url: https://www.mosaic.com/en/who-we-are/
+  - type: Services
+    url: https://www.mosaic.com/en/what-we-do/
+  - type: Portfolio
+    url: https://www.mosaic.com/en/our-work/
+  - type: Blog
+    name: News + insights
+    url: https://www.mosaic.com/en/news/
+  - type: Careers
+    url: https://www.mosaic.com/en/careers/
+  - type: Contact
+    url: https://www.mosaic.com/en/contact/
+  - type: TermsOfService
+    name: Acosta Group terms and conditions of use (linked from the mosaic.com footer)
+    url: https://www.acosta.group/terms-and-conditions-of-use/
+  - type: PrivacyPolicy
+    name: Acosta Group privacy policy (linked from the mosaic.com footer)
+    url: https://www.acosta.group/privacy-policy/
+  - type: Accessibility
+    url: https://www.acosta.group/integrated-accessibility-standards-policy/
+  - type: Security
+    name: Acosta Group security compliance + vulnerability disclosure policy (parent company)
+    url: https://www.acosta.group/security/
+  - type: Compliance
+    name: Acosta Group SOC 2 Type II (parent company)
+    url: https://www.acosta.group/security/
+  - type: VulnerabilityDisclosure
+    url: security/mosaic-vulnerability-disclosure.yml
+  - type: TrustCenter
+    url: security/mosaic-trust-center.yml
+  - type: Plans
+    url: plans/mosaic-plans-pricing.yml
 apis: []
 commonProperties:
   - type: Website
@@ -42,3 +92,29 @@ commonProperties:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Mosaic sells experiential marketing, corporate events, shopper programs and outsourced
+    retail field labor — software is not the product, so there is nothing to expose: every
+    OpenAPI/GraphQL/MCP/.well-known probe on www.mosaic.com returns the site's Next.js 404,
+    developer.mosaic.com and api.mosaic.com do not resolve, and the company's own llms.txt
+    indexes only company, service-line, case-study, office and policy pages.
+  evidence:
+    - url: https://www.mosaic.com/llms.txt
+      status: 200
+    - url: https://www.mosaic.com/openapi.json
+      status: 404
+    - url: https://www.mosaic.com/.well-known/agent-card.json
+      status: 404
+    - url: https://www.mosaic.com/sitemap-0.xml
+      status: 200
+    - url: https://developer.mosaic.com
+      status: 0
+  checked: '2026-08-13'
