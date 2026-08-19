@@ -1,0 +1,23 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.mosaic.com/en/what-we-do/
+plan_count: 0
+note: >-
+  Mosaic publishes no pricing, plans, rate card or packaged tiers anywhere on
+  www.mosaic.com. It is a services agency: engagements (experiential programs, B2B
+  events, integrated commerce, field sales and merchandising labor) are scoped and
+  quoted through new-business contact, and the site's only commercial call to action is
+  the contact page. The full 79-URL sitemap was read and contains no /pricing, /plans or
+  /packages path, and the company-authored llms.txt lists no pricing page. This is an
+  honest zero, not an unchecked field.
+plans: []
+contact:
+  url: https://www.mosaic.com/en/contact/
+  model: quoted engagement
+evidence:
+  - url: https://www.mosaic.com/sitemap-0.xml
+    status: 200
+    note: no pricing/plans URL present
+  - url: https://www.mosaic.com/llms.txt
+    status: 200
+    note: company-authored index lists Company, Service Lines, Work, Offices, Policies — no pricing

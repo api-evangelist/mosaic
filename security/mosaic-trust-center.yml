@@ -1,0 +1,54 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.acosta.group/security/
+url: https://www.acosta.group/security/
+scope: parent-company
+scope_note: >-
+  There is no trust.mosaic.com, security.mosaic.com or mosaic.com/security page — the
+  hostnames do not resolve and the paths are not in the sitemap. Mosaic's own
+  llms.txt Policies section points at Acosta Group for "Security Compliance", and Mosaic
+  is a pillar agency of Acosta Group, so the corporate Security Compliance page is the
+  trust surface that covers this company. Recorded at parent scope, not claimed as a
+  Mosaic-operated trust center.
+title: Security Compliance — Acosta Group
+certifications:
+  - name: SOC 2 Type II
+    body: AICPA
+    status: held
+    report_access: >-
+      Latest SOC report is offered to clients and customers with an existing NDA, by
+      request form on the Security Compliance page — not publicly downloadable.
+    evidence: >-
+      "Acosta Group holds the prestigious SOC 2 Type II certification ... we undergo
+      independent audits and validations to ensure the effectiveness of our security
+      controls and data protection measures."
+programs:
+  - name: Vulnerability Disclosure Policy
+    url: https://www.acosta.group/wp-content/uploads/2026/04/Acosta-Group-Vulnerability-Disclosure-Policy-March-31-2026.pdf
+    published: '2026-03-31'
+    detail: security/mosaic-vulnerability-disclosure.yml
+policies:
+  - name: Privacy Policy
+    url: https://www.acosta.group/privacy-policy/
+  - name: Terms and Conditions of Use
+    url: https://www.acosta.group/terms-and-conditions-of-use/
+  - name: Integrated Accessibility Standards Policy
+    url: https://www.acosta.group/integrated-accessibility-standards-policy/
+  - name: Cookie Policy
+    url: https://www.acosta.group/cookie-policy/
+not_found:
+  - ISO 27001
+  - PCI DSS
+  - HIPAA
+  - FedRAMP
+  - CSA STAR
+evidence:
+  - source: https://www.acosta.group/security/
+    status: 200
+    keywords: [soc 2 type ii, vulnerability disclosure policy, security and compliance, aicpa]
+  - source: https://trust.acosta.group
+    status: 0
+    note: hostname does not resolve
+  - source: https://www.mosaic.com/en/
+    status: 200
+    note: footer links privacy, terms, accessibility and cookie policy to www.acosta.group

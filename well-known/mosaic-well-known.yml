@@ -1,0 +1,36 @@
+generated: '2026-08-13'
+method: probed
+source: https://www.mosaic.com/.well-known/
+host: https://www.mosaic.com
+note: >-
+  Every /.well-known/ path probed on www.mosaic.com returned a hard HTTP 404 with the
+  site's standard Next.js not-found HTML — no discovery document is served. Recorded as
+  an absence: NO WellKnown or SecurityTxt pointer is emitted in apis.yml, because the
+  pointer would assert that Mosaic serves that surface. www.mosaic.com is the only host
+  in this profile; Mosaic publishes no API host, no developer subdomain
+  (developer.mosaic.com and api.mosaic.com do not resolve) and no OpenAPI servers[].
+documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+other_probes:
+  - path: /robots.txt
+    status: 200
+    note: 'User-agent: * / Allow: / — no agent or crawler restrictions; points at /sitemap-index.xml'
+  - path: /sitemap-index.xml
+    status: 200
+    note: 79 URLs, all marketing/case-study pages in /en/ and /fr/. No developer, docs or API path.
+  - path: /llms.txt
+    status: 200
+    note: Real llms.txt served; harvested verbatim to llms/mosaic-llms.txt.
