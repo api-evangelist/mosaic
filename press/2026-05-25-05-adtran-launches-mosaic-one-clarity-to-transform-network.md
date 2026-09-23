@@ -1,7 +1,9 @@
 ---
 title: Adtran launches Mosaic One Clarity to transform network ...
 url: https://www.adtran.com/en/newsroom/press-releases/20251014-adtran-launches-mosaic-one-clarity-to-transform-network-operations
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Mosaic" press release artificial intelligence'
 position: 5
 source: serpapi-google

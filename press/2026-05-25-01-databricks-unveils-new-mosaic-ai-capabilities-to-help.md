@@ -1,7 +1,9 @@
 ---
 title: Databricks Unveils New Mosaic AI Capabilities to Help ...
 url: https://www.databricks.com/company/newsroom/press-releases/databricks-unveils-new-mosaic-ai-capabilities-help-customers-build
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Mosaic" press release artificial intelligence'
 position: 1
 source: serpapi-google
